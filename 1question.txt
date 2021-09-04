@@ -1,0 +1,353 @@
+1)Find the culprit
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( 'I’m JavaScript!');
+ </script>
+ <!--Whats the error in this  --> 
+</body>
+</html>
+
+2) Find the culprit and invoke the alert
+  
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='scripts.js'></script> <!-- changed the name of js file -->
+</body>
+</html>
+
+ script.js:
+  
+ alert('Im invoked!');
+ 
+ 
+3) Explain the below how it works
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon  --> it soptional
+alert(`Wor
+ ld`)     // wor will be displayed in first line and ld in next line
+alert(3 +
+1
++ 2); // this is multiple line code and its working  ---. yes it will work it will add all three numbers and show it as alert
+
+
+// once one alert is accepted continious the subsequent alerts will be coming.
+
+
+4)Fix the below to alert Guvi geek
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+  
+let admin=9, fname=10.5; 
+fname = "Guvi";
+let lname = "geek"  // variable is initialised 
+admin = fname + ' ' + lname; // added space here
+alert( admin ); // "Guvi geek"
+
+5)Fix the below to alert hello Guvi geek
+  
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+
+let fname=10.5; 
+fname = "Guvi";
+let lname = "geek"
+let name = fname + ' ' + lname;
+
+6)Fix the below to alert sum of two numbers
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+
+let a = +prompt("First number?");  // string is typecasted to number
+let b = +prompt("Second number?"); // string is typecasted to number
+alert(a + b);
+
+
+7)Fix the below to alert sum of two numbers
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+
+script.js:
+
+
+var a = "2" > "12";  // when both are strings it will check alphabetically so 2 comes after 1 so it is true.
+
+a = 2 > '12'  // to get diffused it should be changed lyk this
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+8)If you run the below scritpt you will get “Code is Blasted”
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+
+let a = !prompt("Enter a number?");  // added not operator
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+9)How to get the success in console.
+  
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+
+let value = +prompt('How many runs you scored in this ball');  // string input is converted to number
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+10)Fix the code to welcome the Employee
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+
+let login = 'Employee';
+let message = (login == 'Employee') ? 'Welcome':  // welcome is added
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+11)Fix the code to welcome the boss
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+// You cant change the value of the msg
+let message;
+if (null || 2 || undefined )
+{
+ message = "welcome boss";   // already it is declared outside so no need to declare it again
+}
+else
+{
+ message = "Go away";   // already it is declared outside so no need to declare it again
+}
+  console.log(message);
+  
+  
+  12)Fix the code to welcome the boss
+  <!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+
+  let message;
+let lock = 2;
+//Dont change any code below this 
+if (null && lock && undefined )   // changing or operator to and
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+ 
+ 
+ 13)Fix the code to welcome the boss
+   <!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+scipt.js:
+
+let message;
+let lock = 2;
+//Dont change any code below this
+if (lock && "" || undefined) // " " there was space so it is considered as a values so it is changed to ""
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+14)Change the code to print
+3
+2
+1
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+
+//You can change only 2 characters
+let i = 3;
+while (i) {
+  console.log( i--);  // changed to post decrement
+}
+
+15)Change the code to print 1 to 10 in 4 lines
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+for (let i = 1; i <= 10 ; ++i)
+{
+    console.log(i);
+}
+
+16)Change the code to print even numbers
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 2) {  // one is changed to 2 in increment part
+    console.log(num)
+  }
+  
+  17)Change the code to print all the gifts
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log('Wrapped '+gifts[i]+' and added a bow!');  // used + operator to concat the strings
+}
+
+18)Fix the code to disarm the bomb.
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+  
+let countdown = 100;
+while (countdown > 0) {
+  
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+
+  countdown--;   // decrement is done after if block
+}
+
+19)Whats the msg printed and why?
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js:
+
+var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) {
+ msg += "hi";
+ }
+if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);  // output: 'hi'   limein is a string '0' so it is considered as truthy value and lemeout is number 0 it is 
+                        //considered as false value
